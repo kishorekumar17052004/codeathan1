@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CodePulse AI - Next-Generation Developer Collaboration Platform & Hackathon Engine with Real-Time Multi-Branch Syncing and AI Assistance.">
+  <meta name="keywords" content="Hackathon, CodePulse, AI Developer Tool, Git Workflow, Real-time Code Editor, Developer Platform">
+  <meta name="author" content="CodeAthon Team">
+  <title>CodePulse AI | Next-Gen Developer Collaboration & Hackathon Engine</title>
+  
+  <!-- Favicon / Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+        <span>CodePulse<span class="gradient-text">.ai</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#demo" class="nav-link">Live Sandbox</a></li>
+        <li><a href="#workflow" class="nav-link">Git Workflow</a></li>
+        <li><a href="#team" class="nav-link">Team & Stack</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="branch-badge" id="branch-badge">
+          <i class="fa-solid fa-code-branch"></i> feature/landingPage
+        </div>
+        <a href="https://github.com/kishorekumar17052004/codeathan1.git" target="_blank" class="btn btn-secondary" id="btn-github">
+          <i class="fa-brands fa-github"></i> GitHub Repo
+        </a>
+        <a href="#demo" class="btn btn-primary" id="btn-launch">
+          Launch Sandbox <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-tag" id="hero-tag">
+        <i class="fa-solid fa-bolt"></i> 5-Member Hackathon Team Engine
+      </div>
+      
+      <h1 class="hero-title">
+        Build, Sync & Deploy <br>
+        <span class="gradient-text">Hackathon Features at Scale</span>
+      </h1>
+
+      <p class="hero-description">
+        Accelerate your codeathon development. Seamlessly isolate feature branches, automate live PR checks, and collaborate in real-time with AI-assisted code refactoring.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#demo" class="btn btn-primary" id="btn-hero-start">
+          <i class="fa-solid fa-play"></i> Explore Live Demo
+        </a>
+        <a href="#workflow" class="btn btn-secondary" id="btn-hero-workflow">
+          <i class="fa-solid fa-sitemap"></i> View Git Workflow Strategy
+        </a>
+      </div>
+
+      <!-- Live Interactive Window Visualizer -->
+      <div class="hero-visual" id="hero-visual">
+        <div class="window-header">
+          <div class="window-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="window-title">
+            <i class="fa-regular fa-file-code"></i> client/index.html — feature/landingPage
+          </div>
+          <div class="window-status" style="color: var(--accent-green); font-size: 0.8rem;">
+            <i class="fa-solid fa-circle" style="font-size: 0.5rem;"></i> Live Syncing
+          </div>
+        </div>
+
+        <div class="code-container">
+          <div class="code-line">
+            <span class="line-num">01</span>
+            <span><span class="keyword">import</span> { <span class="function">initializeHackathonEngine</span> } <span class="keyword">from</span> <span class="string">'@codepulse/core'</span>;</span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">02</span>
+            <span></span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">03</span>
+            <span><span class="comment">// Connecting Frontend feature branch to develop stage</span></span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">04</span>
+            <span><span class="keyword">const</span> app = <span class="keyword">new</span> <span class="function">CodePulseApp</span>({</span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">05</span>
+            <span>&nbsp;&nbsp;branch: <span class="string">'feature/landingPage'</span>,</span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">06</span>
+            <span>&nbsp;&nbsp;targetBranch: <span class="string">'develop'</span>,</span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">07</span>
+            <span>&nbsp;&nbsp;productionBranch: <span class="string">'main'</span>,</span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">08</span>
+            <span>&nbsp;&nbsp;teamMembers: <span class="operator">5</span>,</span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">09</span>
+            <span>&nbsp;&nbsp;role: <span class="string">'Frontend Lead'</span></span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">10</span>
+            <span>});</span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">11</span>
+            <span></span>
+          </div>
+          <div class="code-line">
+            <span class="line-num">12</span>
+            <span><span class="keyword">await</span> app.<span class="function">syncRealtimeCode</span>(); <span class="comment">// 🚀 Status: Clean Build (0 Errors)</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar" id="stats-bar">
+        <div class="stat-card">
+          <div class="stat-number gradient-text">5</div>
+          <div class="stat-label">Active Team Members</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text">2</div>
+          <div class="stat-label">Core Branches (main & develop)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text">100%</div>
+          <div class="stat-label">Isolated Feature Workflow</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number gradient-text">&lt; 15ms</div>
+          <div class="stat-label">Local Dev Server Latency</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Supercharge Your Workflow</div>
+        <h2 class="section-title">Architected for High-Speed Hackathon Delivery</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card" id="feature-1">
+          <div class="feature-icon"><i class="fa-solid fa-code-merge"></i></div>
+          <h3 class="feature-title">Branch Isolation</h3>
+          <p class="feature-desc">Every member works safely on dedicated feature branches like <code>feature/landingPage</code> without breaking the <code>develop</code> baseline.</p>
+        </div>
+
+        <div class="feature-card" id="feature-2">
+          <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 class="feature-title">AI Code Refactoring</h3>
+          <p class="feature-desc">Instant inline AI assistance for formatting, accessibility standards, CSS micro-animations, and clean HTML structure.</p>
+        </div>
+
+        <div class="feature-card" id="feature-3">
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="feature-title">Dual-Stage Merge Safety</h3>
+          <p class="feature-desc">All features validate in <code>develop</code> first. Only fully verified code gets merged into <code>main</code> for zero-downtime deployment.</p>
+        </div>
+
+        <div class="feature-card" id="feature-4">
+          <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 class="feature-title">Vanilla HTML & CSS Precision</h3>
+          <p class="feature-desc">Zero bloat framework setup. Supercharged native CSS variables, glassmorphism tokens, and lightweight responsive layouts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Sandbox Demo Section -->
+  <section class="section" id="demo">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Live Interactive Demo</div>
+        <h2 class="section-title">Explore the Hackathon Platform Sandbox</h2>
+      </div>
+
+      <div class="demo-container">
+        <div class="tabs-header" id="tabs-header">
+          <button class="tab-btn active" data-tab="tab-editor" id="tab-btn-editor">
+            <i class="fa-solid fa-code"></i> Live Frontend Sandbox
+          </button>
+          <button class="tab-btn" data-tab="tab-git" id="tab-btn-git">
+            <i class="fa-solid fa-code-branch"></i> Git Branch Strategy
+          </button>
+          <button class="tab-btn" data-tab="tab-ai" id="tab-btn-ai">
+            <i class="fa-solid fa-robot"></i> AI Pair Programmer
+          </button>
+        </div>
+
+        <!-- Tab 1: Live Frontend Sandbox -->
+        <div class="tab-content active" id="tab-editor">
+          <div class="tab-text">
+            <h3>Responsive UI & Glassmorphism Design System</h3>
+            <p>Designed with curated dark color tokens, smooth fluid typography, and modular component cards that look impressive on any screen size.</p>
+            <ul class="workflow-list">
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-check"></i></span> Modern HSL & CSS Gradient Variables</li>
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-check"></i></span> Glassmorphic Backdrop Blur Filters</li>
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-check"></i></span> Fast Page Load & SEO Optimization</li>
+            </ul>
+          </div>
+          <div class="branch-visualizer">
+            <div style="margin-bottom: 12px; font-weight: 600; color: var(--accent-cyan);">
+              <i class="fa-solid fa-terminal"></i> Terminal Output:
+            </div>
+            <pre class="code-font" style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+$ git status
+On branch <span style="color: var(--primary-purple);">feature/landingPage</span>
+Your branch is up to date with 'origin/develop'.
+
+Changes ready to be committed:
+  (use "git add &lt;file&gt;..." to update)
+	<span style="color: var(--accent-green);">new file:   client/index.html</span>
+	<span style="color: var(--accent-green);">new file:   client/style.css</span>
+	<span style="color: var(--accent-green);">new file:   client/script.js</span>
+
+$ git push origin feature/landingPage
+✓ Branch pushed successfully! Ready for Pull Request.
+            </pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Git Branch Strategy -->
+        <div class="tab-content" id="tab-git">
+          <div class="tab-text">
+            <h3>5-Member Branch & Merge Pipeline</h3>
+            <p>Maintain clean commit history and avoid merge conflicts during high-stakes hackathon coding sessions.</p>
+            <ul class="workflow-list">
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-code-branch"></i></span> <strong>main</strong>: Production-ready hackathon showcase codebase</li>
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-code-branch"></i></span> <strong>develop</strong>: Staging branch where all member features unite</li>
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-code-branch"></i></span> <strong>feature/*</strong>: Isolated developer branches (e.g. <code>feature/landingPage</code>)</li>
+            </ul>
+          </div>
+          <div class="branch-visualizer">
+            <div class="branch-node main-branch">
+              <i class="fa-solid fa-shield-halved" style="color: var(--accent-green);"></i>
+              <div>
+                <div class="branch-name">main</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Stable Production Release</div>
+              </div>
+              <span class="branch-status" style="border-color: var(--accent-green); color: var(--accent-green);">Protected</span>
+            </div>
+
+            <div class="branch-node dev-branch" style="margin-left: 20px;">
+              <i class="fa-solid fa-code-merge" style="color: var(--accent-cyan);"></i>
+              <div>
+                <div class="branch-name">develop</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Active Staging Branch</div>
+              </div>
+              <span class="branch-status" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">Staging</span>
+            </div>
+
+            <div class="branch-node feature-branch" style="margin-left: 40px;">
+              <i class="fa-solid fa-code-pull-request" style="color: var(--accent-pink);"></i>
+              <div>
+                <div class="branch-name">feature/landingPage (Your Branch)</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Frontend UI & Layout</div>
+              </div>
+              <span class="branch-status" style="border-color: var(--accent-pink); color: var(--accent-pink);">Active</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: AI Pair Programmer -->
+        <div class="tab-content" id="tab-ai">
+          <div class="tab-text">
+            <h3>AI-Powered Pair Programming</h3>
+            <p>Collaborate with AI to generate accessible markup, perform speed optimizations, and debug layout bugs live in real-time.</p>
+            <ul class="workflow-list">
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-check"></i></span> Automated Linting & Accessibility Checks</li>
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-check"></i></span> Responsive Breakdown Calculation</li>
+              <li class="workflow-item"><span class="workflow-badge"><i class="fa-solid fa-check"></i></span> Seamless Git Integration</li>
+            </ul>
+          </div>
+          <div class="branch-visualizer">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: var(--primary-purple);">
+              <i class="fa-solid fa-robot"></i> <strong>Antigravity AI Assistant</strong>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 16px; border-radius: var(--radius-sm); font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+              "Frontend baseline created on branch <strong style="color: var(--primary-purple);">feature/landingPage</strong>. All HTML5 semantic markup, glassmorphism CSS, and tab interactions are ready. Let's merge into <strong>develop</strong> when ready!"
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" id="workflow">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready to Merge into Develop?</h2>
+        <p>Your frontend feature foundation is cleanly structured and ready to integrate with the rest of your 5-member team.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://github.com/kishorekumar17052004/codeathan1.git" target="_blank" class="btn btn-primary" id="btn-cta-pr">
+            <i class="fa-solid fa-code-pull-request"></i> Create Pull Request
+          </a>
+          <a href="#hero" class="btn btn-secondary" id="btn-cta-top">
+            <i class="fa-solid fa-arrow-up"></i> Back to Top
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="team">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+            <span>CodePulse<span class="gradient-text">.ai</span></span>
+          </a>
+          <p>Next-Generation Hackathon Engine engineered for high-performance team collaboration and rapid feature shipping.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#demo">Live Sandbox</a></li>
+            <li><a href="#workflow">Git Pipeline</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Repository</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/kishorekumar17052004/codeathan1.git" target="_blank">GitHub Repo</a></li>
+            <li><a href="#">Main Branch</a></li>
+            <li><a href="#">Develop Branch</a></li>
+            <li><a href="#">Feature Branches</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Team Role</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--accent-cyan); font-weight: 600;">Frontend Developer</span></li>
+            <li><span>5-Member Hackathon Squad</span></li>
+            <li><span>Stack: HTML5 / CSS3 / JS</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 CodeAthon Team. Built for Codepulse Event.</div>
+        <div style="font-family: 'Fira Code', monospace; color: var(--primary-purple);">
+          Current Branch: feature/landingPage
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
